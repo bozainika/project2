@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block container %}
+<div class="window-center">
+	<div style="background-color: white; height: 50vh"
+	 class="align-text-middle col-sm-10 col-md-8 col-lg-6 col-centered window-man align-middle">
+	 	<h1 style="text-align: center;">Welcome to Chat</h1>
+	 	<h3 style="text-align: center;">Enter you username below:</h3>
+	 	<div style="margin: 50px;text-align: center;">
+	 		<form method="post" action="{{url_for('login')}}">
+	 			<div class="form-group">
+	 				<input type="text" name="username" size="60" class='form-control' autofocus required>
+	 			</div>
+	 			<button class="btn btn-link btn-lg btn-block" 
+	 			style="background-color: #8B008B;color:white" type="submit">Login</button>
+	 		</form>
+	 	</div>
+	</div>
+</div>
+{% endblock %}
